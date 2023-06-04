@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title-page">
+        <h1>Домашнее задание 13 недели</h1>
+    </div>
+    <div class="title-form">
+        <h2>Сервис комментариев со спам фильтром</h2>
+        <div class="form" id="form">
+            <h3>Оставьте ваш комментарий</h3>
+            <form class="form__container" id="formbox" action="#" method="post" onsubmit="return false">
+                <div id="formcheckbox" class="form__checkbox">
+                    <p >Показывать Ваше Имя?</p>
+                    <p><input name="checkbox" type="radio" value="yes" checked>Да</p>
+                    <p><input name="checkbox" type="radio" value="no">Нет</p>
+                </div>
+                <div class="form__name">
+                    <p>Введите ваше имя:</p>
+                    <input class="form__name-field" id="name-field" name="name" type="text" placeholder="Имя" required>
+                </div>
+                <div class="form__userpic">
+                    <p>Введите ссылку вашего аватара:</p>
+                    <input class="form__userpic-field" id="userpic-field" name="userpic" type="url" placeholder="Ссылка" required>
+                </div>
+                <div class="form__comment">
+                    <p>Оставьте комментарий:</p>
+                    <textarea class="form__comment-field" id="comment-field" name="comment" type="text" placeholder="Комментарий" required></textarea>
+                </div>
+                <button class="button" type="submit" id="comment-add">Отправить комментарий</button>
+            </form>
+        </div>
+        <div class="chat" id="chat">
+            <h3>Чат</h3>
+            <div class="chat__form" id="chatform">
+            </div>
+        </div>
+    </div>
+    <script src="script12.js"></script>
+</body>
+</html>
